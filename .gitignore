@@ -1,0 +1,23 @@
+node_modules
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+
+# Build
+build/
+dist/
+
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+.vite/
+.vercel/
