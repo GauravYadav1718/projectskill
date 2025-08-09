@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3285;
 
 // Middleware
 app.use(cors({
-  origin: process.env.CORS_ORIGIN ,
+  origin: 'https://projectskill-8rue-git-main-gauravyadav1718s-projects.vercel.app' ,
   credentials: true
 }));
 
