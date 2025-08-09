@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect( process.env.MONGODB_URI || "mongodb+srv:gaurav:gaurav123%40@cluster0.k0kjrm4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+mongoose.connect( "mongodb+srv:gaurav:gaurav123%40@cluster0.k0kjrm4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
  useNewUrlParser: true,
     useUnifiedTopology: true,
 })
