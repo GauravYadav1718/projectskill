@@ -4,7 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3285;
+
 
 // Middleware
 app.use(cors({
@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect( process.env.MONGODB_URI , {
+mongoose.connect( process.env.MONGODB_URI || mongodb+srv:gaurav:gaurav123@@cluster0.k0kjrm4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, {
 
 })
 .then(() => console.log('MongoDB Connected'))
