@@ -19,9 +19,9 @@ const Skills = () => {
   const [notification, setNotification] = useState(null);
 
   // API base URL - adjust this to match your backend
-  const API_BASE_URL = 'http://localhost:3285/api/skills';
-  const AUTH_API_URL = 'http://localhost:3285/api/auth';
-  const REQUEST_API_URL = 'http://localhost:3285/api/requests';
+  const API_BASE_URL = 'https://projectskill-1.onrender.com/api/skills';
+  const AUTH_API_URL = 'https://projectskill-1.onrender.com/api/auth';
+  const REQUEST_API_URL = 'https://projectskill-1.onrender.com/api/requests';
 
   const categories = ['all', 'Frontend', 'UI/UX Design', 'AI/ML', 'Backend', 'Cybersecurity', 'Java', 'DSA', 'Other'];
   const levels = ['all', 'Beginner', 'Intermediate', 'Advanced'];
