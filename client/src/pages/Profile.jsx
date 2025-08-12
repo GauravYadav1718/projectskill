@@ -27,20 +27,7 @@ const Profile = () => {
   const [showAddSkillModal, setShowAddSkillModal] = useState(false);
 
   // Mock user data - replace with actual user data
-  const [userData, setUserData] = useState({
-    _id: '123',
-    name: 'Jane Smith',
-    email: 'jane.smith@email.com',
-    phone: '+1 (555) 123-4567',
-    location: 'San Francisco, CA',
-    bio: 'Passionate full-stack developer with 8+ years of experience. I love sharing knowledge and helping others grow in their tech careers.',
-    avatar: '/api/placeholder/150/150',
-    joinDate: '2023-01-15',
-    website: 'https://janesmith.dev',
-    github: 'janesmith',
-    linkedin: 'jane-smith-dev',
-    twitter: 'janesmith_dev'
-  });
+  const [userData, setUserData] = useState();
 
   const [skills, setSkills] = useState([
     { _id: '1', name: 'React', level: 'Expert', category: 'Frontend', endorsements: 12 },
@@ -52,30 +39,10 @@ const Profile = () => {
 
   const [stats] = useState({
     totalSkills: 5,
-    totalEndorsements: 45,
-    mentoringSessions: 23,
     requestsReceived: 12,
     requestsSent: 8
   });
 
-  const [reviews] = useState([
-    {
-      _id: '1',
-      from: { name: 'John Doe', avatar: '/api/placeholder/40/40' },
-      rating: 5,
-      comment: 'Jane is an excellent mentor! She helped me understand React concepts clearly.',
-      skill: 'React',
-      date: '2024-01-10'
-    },
-    {
-      _id: '2',
-      from: { name: 'Mike Johnson', avatar: '/api/placeholder/40/40' },
-      rating: 5,
-      comment: 'Great teacher with lots of patience. Highly recommend for UI/UX guidance.',
-      skill: 'UI/UX Design',
-      date: '2024-01-05'
-    }
-  ]);
 
   const handleSave = () => {
     // Save user data to backend
