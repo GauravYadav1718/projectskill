@@ -21,7 +21,7 @@ const Requests = () => {
   });
 
   // API base URL - adjust according to your setup
-  const API_BASE_URL = 'http://localhost:3285/api';
+  const API_BASE_URL = 'https://projectskill-1.onrender.com/api';
 
   // Get auth token from localStorage
   const getAuthToken = () => {
