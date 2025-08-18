@@ -68,7 +68,10 @@ const Navbar = () => {
             {isAuthenticated ? (
               <>
                 <span className="text-gray-700">Welcome, {user.name}</span>
-                <Link to="/profile" className="text-gray-700 hover:text-primary-600">
+                <Link 
+                  to="/profile" 
+                  className={`${isActive('/profile') ? 'text-primary-600' : 'text-gray-700'} hover:text-primary-600 transition-colors`}
+                >
                   Profile
                 </Link>
                 <button 
