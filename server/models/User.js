@@ -19,14 +19,14 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 6
   },
-  bio: {
-    type: String,
-    default: ''
-  },
-  avatar: {
-    type: String,
-    default: ''
-  },
+  // bio: {
+  //   type: String,
+  //   default: ''
+  // },
+  // avatar: {
+  //   type: String,
+  //   default: ''
+  // },
   skills: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Skill'
