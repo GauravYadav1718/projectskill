@@ -8,7 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Skills from './pages/Skills'
 import MySkills from './pages/MySkills'
 import Requests from './pages/Requests'
-import Profile from './pages/Profile'
+
 import Message from './pages/Message'
 import ProtectedRoute from './components/ProtectedRoute'
 import LoadingSpinner from './components/LoadingSpinner'
@@ -33,7 +33,7 @@ function App() {
           <Route path="/my-skills" element={<ProtectedRoute><MySkills /></ProtectedRoute>} />
           <Route path="/requests" element={<ProtectedRoute><Requests /></ProtectedRoute>} />
           <Route path="/messages" element={<ProtectedRoute><Message /></ProtectedRoute>} />
-          <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          
           
         </Routes>
       </main>
