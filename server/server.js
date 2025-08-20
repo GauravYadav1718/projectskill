@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3285;
 
 
 app.use(cors({
-  origin: 'https://projectskill-8rue.vercel.app' ,
+  origin: 'https://projectskill1718.vercel.app' ,
   credentials: true
 }));
 
