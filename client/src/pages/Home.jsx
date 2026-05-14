@@ -47,9 +47,9 @@ const Home = () => {
 
             <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { label: 'Active Users' },
-                { label: 'Skills Swapped' },
-                { label: 'Expert Mentors'},
+                { label: 'Active Users',value: },
+                { label: 'Skills Swapped',value: },
+                { label: 'Expert Mentors' ,value:},
                 
               ].map((stat, i) => (
                 <div key={i} className="text-center">
