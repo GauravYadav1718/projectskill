@@ -47,10 +47,10 @@ const Home = () => {
 
             <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { label: 'Active Users', value: '10K+' },
-                { label: 'Skills Swapped', value: '25K+' },
-                { label: 'Expert Mentors', value: '500+' },
-                { label: 'Success Rate', value: '98%' },
+                { label: 'Active Users' },
+                { label: 'Skills Swapped' },
+                { label: 'Expert Mentors'},
+                
               ].map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className="text-3xl font-bold text-slate-900 mb-1">{stat.value}</div>
@@ -125,7 +125,7 @@ const Home = () => {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-600/10 blur-[150px]"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-black">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-black">
             Ready to Amplify Your Potential?
           </h2>
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
