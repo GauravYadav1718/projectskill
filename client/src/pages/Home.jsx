@@ -124,7 +124,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-slate-900 -z-10">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-600/10 blur-[150px]"></div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-black">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Ready to Amplify Your Potential?
           </h2>
@@ -152,12 +152,7 @@ const Home = () => {
             <span className="text-xl font-bold gradient-text">SkillSwap</span>
           </div>
           <div className="text-slate-500 text-sm">
-            © 2024 SkillSwap. All rights reserved.
-          </div>
-          <div className="flex space-x-6">
-            <a href="#" className="text-slate-400 hover:text-primary-600 transition-colors">Twitter</a>
-            <a href="#" className="text-slate-400 hover:text-primary-600 transition-colors">LinkedIn</a>
-            <a href="#" className="text-slate-400 hover:text-primary-600 transition-colors">GitHub</a>
+             SkillSwap.
           </div>
         </div>
       </footer>
