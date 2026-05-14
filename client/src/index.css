@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f8fafc] text-slate-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-primary-600 text-white px-6 py-2.5 rounded-xl font-semibold 
+           transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-500/30 
+           active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-secondary {
+    @apply relative overflow-hidden bg-secondary-600 text-white px-6 py-2.5 rounded-xl font-semibold 
+           transition-all duration-300 hover:bg-secondary-700 hover:shadow-lg hover:shadow-secondary-500/30 
+           active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-slate-200 bg-white text-slate-700 px-6 py-2.5 rounded-xl font-semibold 
+           transition-all duration-300 hover:border-primary-500 hover:text-primary-600 hover:bg-primary-50
+           active:scale-95;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl overflow-hidden
+           transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 bg-white border border-slate-200 rounded-xl outline-none
+           transition-all duration-200 focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500
+           placeholder:text-slate-400;
+  }
+  
+  .form-textarea {
+    @apply w-full px-4 py-3 bg-white border border-slate-200 rounded-xl outline-none
+           transition-all duration-200 focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500
+           placeholder:text-slate-400 resize-none;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-6 transition-all duration-300
+           hover:shadow-md;
+  }
+
+  .nav-link {
+    @apply relative py-2 px-1 text-slate-600 font-medium transition-colors duration-200 hover:text-primary-600;
+  }
+
+  .nav-link-active {
+    @apply text-primary-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary-600 after:rounded-full;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600;
+}
