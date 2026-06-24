@@ -152,7 +152,7 @@ const Home = () => {
             <span className="text-xl font-bold gradient-text">SkillSwap</span>
           </div>
           <div className="text-slate-500 text-sm">
-            © 2024 SkillSwap. All rights reserved.
+            © 2025 SkillSwap. All rights reserved.
           </div>
         </div>
       </footer>
