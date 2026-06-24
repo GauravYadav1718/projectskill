@@ -47,10 +47,10 @@ const Home = () => {
 
             <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { label: 'Active Users', value: '10K+' },
-                { label: 'Skills Swapped', value: '25K+' },
-                { label: 'Expert Mentors', value: '500+' },
-                { label: 'Success Rate', value: '98%' },
+                { label: 'Active Users', value: '2' },
+                { label: 'Skills Swapped', value: '1' },
+                { label: 'Expert Mentors', value: '0' },
+                
               ].map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className="text-3xl font-bold text-slate-900 mb-1">{stat.value}</div>
